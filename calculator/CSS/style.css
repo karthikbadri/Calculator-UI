@@ -1,0 +1,38 @@
+
+.main-container{
+    background: #000000;
+    border-radius: 20px;
+}
+.main-container__input-output{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+.main-container__error-msg{
+    color: red;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+.main-container__button {
+    font-size: 20px;
+    color: #0e0d0de8;
+    background-color: #f7750a;
+    border-width: 2px;
+    border-color: #141211de;
+    border-style: solid;
+    border-radius: 35%;
+    width: 70px;
+    height: 70px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.history-section{
+    background-color: #808080;
+    color: #000000;
+    border-radius: 20px;
+}
+.li-list{
+    font-size: 20px;
+    font-weight: bold;
+}
