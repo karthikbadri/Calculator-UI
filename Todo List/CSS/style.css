@@ -1,0 +1,21 @@
+.update-con{
+            display: none;
+        }
+        .update-con2{
+            display: inline;
+        }
+        .add-button{
+            display: none;
+        }
+        .add-button2{
+            display: inline;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .div-container{
+            display: flex;
+            justify-content: space-around;
+        }

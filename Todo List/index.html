@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        .update-con{
+            display: none;
+        }
+        .update-con2{
+            display: inline;
+        }
+        .add-button{
+            display: none;
+        }
+        .add-button2{
+            display: inline;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .div-container{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo-List</h1>
+    Task: <input type="text" id="input"/>
+    <button id="btn" onclick="addbtn()">Add</button>
+    <button id="update" onclick="update_btn_show()">Update</button>
+    <p id="error"></p>
+    <div>
+        <h2>S.no</h2>
+        <h2>Task</h2>
+        <h2>Action</h2>
+    </div>
+    <ol class="ul-container" id="ul">
+    </ol>
+    <script src="./JS/Todolist.js"></script>
+</body>
+</html>

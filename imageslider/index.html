@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+</head>
+
+
+<body>
+    <h1>Image Slider</h1>
+    <button onclick="imageslides()">start slide</button>
+    <img id="image1" src="./images/karl-benz-l.jpg" height="500" width="600" alt="nature-images">
+    <button onclick="stopslide()">stop slide</button>
+    <script>
+        let imageArray = ["images/karl-benz-l.jpg",
+                    "images/slide_2.jpg",
+                    "images/slide_3.jpg",
+                    "images/slide_4.jpg",
+                    "images/slide_5.jpg"
+        ]
+        var image1 = document.getElementById("image1");
+        count = 0;
+        function imagerepeat() {
+            if (count <= imageArray.length-1) {
+                //console.log(timer);
+                let imagePath = imageArray[count];
+                count++;
+                image1.src = imagePath;
+            }else{
+                count=0;
+            }
+        }
+        function imageslides() {
+            imagedelay = setInterval(imagerepeat, 3000);
+        }
+        function stopslide(){
+            clearInterval(imagedelay);
+        }
+    </script>
+</body>
+
+</html>
